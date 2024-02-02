@@ -45,6 +45,6 @@ do{
        alert(nomeHeroi+" o nivel de Herói é "+nivel+", então é Radiante")
     }
 
-   repetir=prompt("1.Sim /n 2.Não")
+   repetir=prompt("1.Sim \n 2.Não")
 
 }while(repetir == 1)
