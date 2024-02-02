@@ -1,43 +1,50 @@
 let nomeHeroi
 let nivel
+let repetir
 
-nomeHeroi= prompt("Informe o nome do Herói: ")
-console.log(nomeHeroi)
-nivel = prompt(nomeHeroi+" informe seu nivel para sabermos seu ranque!!!")
-console.log(nivel)
+do{
+    nomeHeroi= prompt("Informe o nome do Herói: ")
+    console.log(nomeHeroi)
+    nivel = prompt(nomeHeroi+" informe seu nivel para sabermos seu ranque!!!")
+    console.log(nivel)
+    
+    if(nivel<=1000){
+        alert(nomeHeroi+" o nivel de Herói "+nivel+", então é Ferro");
+    
+    }
+    
+    else if (nivel<=2000){
+       alert(nomeHeroi+" o nivel de Herói é "+nivel+", então é Bronze");
+    }
+    
+    else if (nivel<=5000){
+     alert(nomeHeroi+" o nivel de Herói é "+nivel+", então é Prata");
+    
+    }
+    
+    else if (nivel<=7000){
+       alert(nomeHeroi+" o nivel de Herói é "+nivel+", então é Ouro");
+    
+    }
+    
+    else if (nivel<=8000){
+       alert(nomeHeroi+" o nivel de Herói é "+nivel+", então é Platina");
+    
+    }
+    
+    else if (nivel<=9000){
+       alert(nomeHeroi+" o nivel de Herói é "+nivel+", então é Ascendente");
+    
+    }
+    
+    else if (nivel<=10000){
+       alert(nomeHeroi+" o nivel de Herói é "+nivel+", então é Imortal")
+    }
+    
+    else{
+       alert(nomeHeroi+" o nivel de Herói é "+nivel+", então é Radiante")
+    }
 
-switch (nivel){
-    case (nivel<=1000):
-        console.log(nomeHeroi+" o nivel de Herói "+nivel+", então é Ferro");
-        break;
+   repetir=prompt("1.Sim /n 2.Não")
 
-     case (nivel>=1001 || nivel<=2000):
-        console.log(nomeHeroi+" o nivel de Herói é "+nivel+", então é Bronze");
-        break;
-
-    case (nivel>=2001 || nivel<=5000):
-        console.log(nomeHeroi+" o nivel de Herói é "+nivel+", então é Prata");
-        break;
-        
-    case (nivel>=5001 || nivel<=7000):
-        console.log(nomeHeroi+" o nivel de Herói é "+nivel+", então é Ouro");
-        break;
-
-    case (nivel>=7001 || nivel<=8000):
-        console.log(nomeHeroi+" o nivel de Herói é "+nivel+", então é Platina");
-        break;
-
-    case (nivel>=8001 || nivel<=9000):
-        console.log(nomeHeroi+" o nivel de Herói é "+nivel+", então é Ascendente");
-         break;
-
-    case (nivel>=9001 || nivel<=10000):
-        console.log(nomeHeroi+" o nivel de Herói é "+nivel+", então é Imortal");
-        break;
-
-    case (nivel>=10001):
-        console.log(nomeHeroi+" o nivel de Herói é "+nivel+", então é Radiante");
-        break;
-
- }
-
+}while(repetir == 1)
